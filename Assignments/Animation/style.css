@@ -1,0 +1,46 @@
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 1px solid black;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+}
+
+center {
+    margin-left: 20px;
+    align-items: center;
+    margin-top: 250px;
+}
+
+audio {
+    margin-bottom: 10px;
+}
+
+button {
+    display: flex;
+    font-weight: 600;
+    background-color: whitesmoke;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: skyblue;
+    transition: all ease-in 1s;
+}
+
+button a {
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}

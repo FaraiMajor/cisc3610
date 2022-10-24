@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Assignments/Animation/style.css">
+    <title>Animation Assignment</title>
+    <script>
+        var themeSong = document.getElementById("sonicTheme");
+        themeSong.play();
+    </script>
+</head>
+
+<body>
+    <div id="gameArea">
+        <canvas id="mycanvas" width="900px" height="700px"></canvas>
+
+    </div>
+
+
+
+
+    <center>
+        <h1 style="color: whitesmoke">Farai's Animation</h1>
+        <audio controls volume="0.1" id="sonicTheme" autoplay>
+            <source src="/assets/sonic/themesong.mp3" type="audio/mpeg">
+        </audio>
+        <button><a href="/index.html">Back to Main Page</a></button>
+        <button><a href="js/animation.js">Source Code</a></button>
+
+    </center>
+
+
+    <script src="/Assignments/Animation/animation.js"></script>
+    <script src="/Assignments/Animation/sonic.js"></script>
+
+
+</body>
+
+</html>
