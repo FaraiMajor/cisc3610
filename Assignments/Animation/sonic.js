@@ -1,5 +1,5 @@
 sonic = {
-    src: "../../assets/sonic/spritesheet.png",
+    src: "./assets/spritesheet.png",
     img: undefined,
     frame: 0,
     offset: 0,

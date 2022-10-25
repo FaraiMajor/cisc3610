@@ -9,10 +9,10 @@ var Scene = {
 };
 
 var background = new Image();
-background.src = '../../assets/sonic/levelBg.png';
+background.src = './assets/levelBg.png';
 
 var speech = new Image();
-speech.src = '../../assets/sonic/speech2.png'
+speech.src = './assets/speech2.png'
 
 
 
