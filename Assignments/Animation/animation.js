@@ -22,14 +22,14 @@ Scene.start = function() {
     Scene.canvasContext = Scene.canvas.getContext("2d");
 
 
-    // Seup the parrot to be displayed.
+    // Seup the sonic to be displayed.
     Scene.sprite = sonic;
 
     // Attach the image to be used for the sprite.
     Scene.sprite.img = new Image();
     Scene.sprite.img.src = Scene.sprite.src;
 
-    // Wait till the parrot image is loaded before starting the animation.
+    // Wait till the sonic image is loaded before starting the animation.
     Scene.sprite.img.onload = function() {
         Scene.sprite.offset = -Scene.sprite.frames[Scene.sprite.frame].frame.w;
         Scene.mainLoop();
@@ -40,11 +40,7 @@ Scene.start = function() {
 
 document.addEventListener('DOMContentLoaded', Scene.start);
 
-
-
-
 // Once the basic HTML document is loaded and its parsing has taken place, start the scene.
-
 
 Scene.clearCanvas = function() {
     Scene.canvasContext.fillStyle = "white";
@@ -63,7 +59,6 @@ Scene.mainLoop = function() {
 Scene.update = function() {
     // Set the canvas width to be that of the display Window. Which helps if you resize the window.
     // Scene.canvas.width = window.innerWidth;
-
     // Set the location of the next frame. 
     Scene.sprite.offset += 15;
     if (Scene.sprite.offset > Scene.canvas.width)
@@ -85,10 +80,7 @@ Scene.draw = function() {
 
     Scene.canvasContext.drawImage(speech, Scene.sprite.offset, 500, );
 
-
     //Scene.drawSpeech();
-
-
 
     // Advance to the next frame.
     Scene.sprite.frame++;
@@ -98,8 +90,6 @@ Scene.draw = function() {
         Scene.sprite.frame = 0;
 
 };
-
-
 
 // Scene.drawSpeech = function () {
 

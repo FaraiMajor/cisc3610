@@ -9,15 +9,18 @@ canvas {
 
 body {
     background-color: black;
+}
+
+.main {
     display: flex;
     padding: 30px;
     justify-content: center;
+    align-items: center;
 }
 
-center {
+section {
     margin-left: 20px;
-    align-items: center;
-    margin-top: 250px;
+    /* align-items: center; */
 }
 
 audio {
@@ -27,7 +30,7 @@ audio {
 button {
     display: flex;
     font-weight: 600;
-    background-color: greenyellow;
+    background-color: green;
     padding: 10px 15px;
     margin-bottom: 10px;
     border: none;
@@ -35,8 +38,8 @@ button {
 }
 
 button:hover {
-    background-color: skyblue;
-    transition: all ease-in 1s;
+    background-color: greenyellow;
+    transition: all ease-in 0.5s;
 }
 
 button a {
