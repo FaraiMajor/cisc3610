@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Sound Machine</title>
+</head>
+
+<body>
+    <h1>Sound Machine</h1>
+    <audio id="car">
+        <source src="./audio/bugatti.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="church">
+        <source src="./audio/church.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="football">
+        <source src="./audio/football.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="guitar">
+        <source src="./audio/guitar.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="piano">
+        <source src="./audio/piano.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div class="container">
+        <button type="button" onclick="playCar()">
+            <img class="images" src="./images/bugatti.png" width="300px" alt="Car">
+        </button>
+        <button type="button" onclick="playPiano()">
+            <img class="images" src="./images/piano.png" width="350px" alt="Piano">
+        </button>
+        <button type="button" onclick="playChurch()">
+            <img class="images" src="./images/church.jpg" width="400px" alt="Bell">
+        </button>
+
+        <button type="button" onclick="playFootball()">
+            <img class="images" src="./images/football.png" width="400px" alt="Football">
+        </button>
+
+        <button type="button" onclick="playGuitar()">
+            <img class="images" src="./images/guitar.png" width="400px" alt="Guitar">
+        </button>
+    </div>
+    <button class="btn"><a href="https://faraimajor.github.io/Farai-cisc3610/">Back to Main Page</a></button>
+    <button class="btn"><a href="https://github.com/FaraiMajor/Farai-cisc3610/tree/main/Assignments/Animation">Source Code</a></button>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
