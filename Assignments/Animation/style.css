@@ -27,9 +27,9 @@ audio {
 button {
     display: flex;
     font-weight: 600;
-    background-color: whitesmoke;
+    background-color: greenyellow;
     padding: 10px 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: none;
     border-radius: 10px;
 }
