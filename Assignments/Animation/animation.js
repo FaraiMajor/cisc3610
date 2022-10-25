@@ -1,7 +1,3 @@
-"use strict";
-
-
-
 var Scene = {
     canvas: undefined,
     canvasContext: undefined,
@@ -95,4 +91,4 @@ Scene.draw = function() {
 
 //     Scene.canvasContext.drawImage(speech, 560, 400);
 
-// }
+//
