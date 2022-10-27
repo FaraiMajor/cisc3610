@@ -46,3 +46,38 @@ button a {
 .btn {
     animation: glowing 1300ms infinite;
 }
+
+#speakBtn {
+    position: relative;
+    /* display: block; */
+    font-size: large;
+    padding: 9px 40px;
+    border-radius: 20px;
+    background-color: #171515;
+    color: whitesmoke;
+    border: none;
+}
+
+#speakBtn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border-radius: 50%; */
+    background: #d35400;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+#speakBtn:hover:before {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px #d35400;
+    filter: blur(3px);
+}
+
+#speakBtn:hover {
+    color: #ffa502;
+    box-shadow: 0 0 20px #d35400;
+    text-shadow: 0 0 20px #d35400;
+}
