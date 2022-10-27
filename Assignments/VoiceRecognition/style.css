@@ -1,0 +1,48 @@
+.canvas {
+    text-align: center;
+}
+
+canvas {
+    border: 3px solid black;
+}
+
+button a {
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+}
+
+.btn {
+    display: inline;
+    justify-content: space-between;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    border: none;
+    color: #eeeeee;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+@keyframes glowing {
+    0% {
+        background-color: #2ba805;
+        box-shadow: 0 0 5px #2ba805;
+    }
+    50% {
+        background-color: #49e819;
+        box-shadow: 0 0 20px #49e819;
+    }
+    100% {
+        background-color: #2ba805;
+        box-shadow: 0 0 5px #2ba805;
+    }
+}
+
+.btn {
+    animation: glowing 1300ms infinite;
+}
