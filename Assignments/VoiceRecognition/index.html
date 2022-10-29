@@ -10,14 +10,23 @@
 </head>
 
 <body>
+    <h1>Speech Recognition</h1>
+    <div class="game">
+        <center>
+            <h3>INSTRUCTIONS!!</h3>
+            <ul>
+                <li>Click 'Speak' and say "Help" for instructions.</li>
+                <li>Click 'Speak' and say "About" to hear about me!</li>
+                <li>Click 'Stop' to speak again</li>
+            </ul>
+            <button id="speakBtn" type="button" onclick="speakMessage();">Speak</button> </br>
+        </center>
+        <p class="canvas">
+            <canvas id="mycanvas" width="600" height="600"></canvas>
+        </p>
+
+    </div>
     <center>
-        <h3>Click Speak button and speak a number between 25 and 300</h3>
-    </center>
-    <p class="canvas">
-        <canvas id="mycanvas" width="600" height="600"></canvas>
-    </p>
-    <center>
-        <button id="speakBtn" type="button" onclick="speakMessage();">Speak</button> </br>
         <div id="bottom">
             <button class="btn"><a href="https://faraimajor.github.io/Farai-cisc3610/">Back to Main Page</a></button>
             <button class="btn"><a href="https://github.com/FaraiMajor/Farai-cisc3610/tree/main/Assignments/VoiceRecognition">Source Code</a></button>
