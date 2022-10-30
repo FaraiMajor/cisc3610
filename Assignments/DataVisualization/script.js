@@ -31,7 +31,7 @@ let donutChart = new Chart(donut, {
                 'rgb(178, 102, 255)',
                 'rgb(255, 102, 255)'
             ],
-            hoverOffset: 15,
+            hoverOffset: 3,
         }]
     },
     options: {
@@ -61,31 +61,31 @@ let hBarChart = new Chart(hbar, {
     type: 'bar',
     data: {
         labels: [
-            'Brooklyn Studio Secondary School',
             'Brooklyn Technical High School',
+            'Stuyvesant High School',
+            'Midwood High School',
             'Edward R. Murrow High School',
+            'James Madison High School',
             'Forest Hills High School',
             'Fort Hamilton High School',
             'Franklin Delano Roosevelt High School',
-            'James Madison High School',
             'John Dewey High School',
-            'Midwood High School',
-            'Stuyvesant High School'
+            'Brooklyn Studio Secondary School'
         ],
         datasets: [{
             label: '2010 SAT Test Takers by School',
-            data: [86, 1047, 686, 627, 581, 385, 641, 349, 725, 804],
+            data: [1047, 804, 725, 686, 641, 627, 581, 385, 349, 68],
             backgroundColor: [
-                'rgb(255, 102, 102)',
                 'rgb(255, 178, 102)',
+                'rgb(255, 102, 255)',
+                'rgb(178, 102, 255)',
                 'rgb(255, 255, 102)',
+                'rgb(102, 255, 255)',
                 'rgb(178, 255, 102)',
                 'rgb(102, 255, 102)',
                 'rgb(102, 255, 178)',
-                'rgb(102, 255, 255)',
                 'rgb(102, 178, 255)',
-                'rgb(178, 102, 255)',
-                'rgb(255, 102, 255)'
+                'rgb(255, 102, 102)'
             ],
             hoverOffset: 15,
 
