@@ -1,5 +1,15 @@
+body {
+    color: white;
+    background-color: black;
+}
+
 h1 {
     text-align: center;
+}
+
+ul li {
+    font-size: 20px;
+    line-height: 40px;
 }
 
 .game {
@@ -16,6 +26,7 @@ h1 {
 
 canvas {
     border: 3px solid black;
+    background-color: white;
 }
 
 button a {
@@ -41,16 +52,16 @@ button a {
 
 @keyframes glowing {
     0% {
-        background-color: red;
-        box-shadow: 0 0 5px red;
+        background-color: rgb(198, 156, 56);
+        box-shadow: 0 0 5px rgb(198, 156, 56);
     }
     50% {
-        background-color: red;
-        box-shadow: 0 0 20px red;
+        background-color: rgb(198, 156, 56);
+        box-shadow: 0 0 20px rgb(198, 156, 56);
     }
     100% {
-        background-color: red;
-        box-shadow: 0 0 5px red;
+        background-color: rgb(198, 156, 56);
+        box-shadow: 0 0 5px rgb(198, 156, 56);
     }
 }
 

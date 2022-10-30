@@ -46,16 +46,16 @@ button a {
 
 @keyframes glowing {
     0% {
-        background-color: green;
-        box-shadow: 0 0 5px green;
+        background-color: rgb(198, 156, 56);
+        box-shadow: 0 0 5px rgb(198, 156, 56);
     }
     50% {
-        background-color: green;
-        box-shadow: 0 0 20px green;
+        background-color: rgb(198, 156, 56);
+        box-shadow: 0 0 20px rgb(198, 156, 56);
     }
     100% {
-        background-color: green;
-        box-shadow: 0 0 5px green;
+        background-color: rgb(198, 156, 56);
+        box-shadow: 0 0 5px rgb(198, 156, 56);
     }
 }
 
