@@ -12,7 +12,7 @@ console.log(fruits[4].name);
 // draw rectangles representing the fruits
 const canvas = document.getElementById('canvas');
 var ctx = canvas.getContext("2d");
-var my_gradient = ctx.createLinearGradient(100, 0, 100, 500);
+// var my_gradient = ctx.createLinearGradient(100, 0, 100, 500);
 my_gradient.addColorStop(0, "black");
 my_gradient.addColorStop(1, "grey");
 ctx.fillStyle = my_gradient;

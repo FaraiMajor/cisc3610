@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.box .inner {
+    width: 10000px;
+    height: 200px;
+    line-height: 200px;
+    font-size: 4em;
+    font-family: sans-serif;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.box .inner:first-child {
+    background-color: whitesmoke;
+    color: darkred;
+    transform-origin: right;
+    transform: perspective(100px) rotateY(-15deg);
+}
+
+.box .inner:last-child {
+    background-color: rgb(44, 27, 27);
+    color: antiquewhite;
+    transform-origin: left;
+    transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+    position: absolute;
+    animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+    animation-delay: 2.5s;
+    left: -100%;
+}
+
+@keyframes marquee {
+    from {
+        left: 100%;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+
+/* title ends */
+
+canvas {
+    margin: 20px 240px;
+    width: 68%;
+    border: 3px black solid;
+}
+
+button a {
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+}
+
+.btn {
+    display: inline;
+    justify-content: space-between;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    border: none;
+    color: #eeeeee;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-color: black;
+        box-shadow: 0 0 5px black;
+    }
+    50% {
+        background-color: black;
+        box-shadow: 0 0 20px black;
+    }
+    100% {
+        background-color: black;
+        box-shadow: 0 0 5px black;
+    }
+}
+
+.btn {
+    animation: glowing 1300ms infinite;
+}
