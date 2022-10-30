@@ -1,0 +1,64 @@
+body {
+    color: white;
+    text-align: center;
+    background-color: rgba(2, 2, 2);
+}
+
+#container {
+    display: flex;
+    width: 49%;
+}
+
+canvas {
+    color: whitesmoke;
+    font-size: 100px;
+    border: 3px solid rgb(56, 6, 6);
+    margin: 0px 5px 30px 50px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    #container {
+        grid-template-columns: auto;
+    }
+}
+
+button a {
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+}
+
+.btn {
+    display: inline;
+    justify-content: space-between;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    border: none;
+    color: #eeeeee;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-color: green;
+        box-shadow: 0 0 5px green;
+    }
+    50% {
+        background-color: green;
+        box-shadow: 0 0 20px green;
+    }
+    100% {
+        background-color: green;
+        box-shadow: 0 0 5px green;
+    }
+}
+
+.btn {
+    animation: glowing 1300ms infinite;
+}
