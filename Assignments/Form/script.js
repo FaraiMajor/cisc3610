@@ -1,63 +1,28 @@
 function reset() {
     const resetname = document.getElementById('name');
-    resetname.style.color = "black";
-    resetname.style.fontSize = "12px";
-    resetname.value = "";
-    resetname.style.background = "white";
+    resetname.value = null;
+    resetname.style.backgroundColor = null;
+    document.getElementById('radio').checked = false;
+    document.getElementById('backgroundColor').value = "white";
+    document.getElementById('size').value = '12';
 }
 
-//function for change Text Color
-let textColor;
-const defaultTextColor = "black";
+// change Text Color
+var colorPicker = document.getElementById("textColor");
+colorPicker.addEventListener("input", updateTextColor, false);
 
-window.addEventListener("load", startup, false);
-
-function startup() {
-    textColor = document.querySelector("#textColor");
-    textColor.value = defaultTextColor;
-    textColor.addEventListener("input", updateFirst, false);
-    textColor.addEventListener("change", updateAll, false);
-    textColor.select();
+function updateTextColor(event) {
+    document.getElementById("name").style.color = event.target.value;
 }
 
-function updateFirst(event) {
-    const name = document.querySelector("#name");
-    if (name) {
-        name.style.color = event.target.value;
-    }
+// change background color
+var colorPicker = document.getElementById("backgroundColor");
+colorPicker.addEventListener("input", updateBgColor, false);
+
+function updateBgColor(event) {
+    document.getElementById("name").style.backgroundColor = event.target.value;
 }
 
-function updateAll(event) {
-    document.querySelectorAll("name").forEach((name) => {
-        name.style.color = event.target.value;
-    });
-}
-//function for change background color 
-let backgroundColor;
-const defaultBackgroundColor = "white";
-
-window.addEventListener("load", startup, false);
-
-function startup() {
-    textColor = document.querySelector("#backgroundColor");
-    textColor.value = defaultBackgroundColor;
-    textColor.addEventListener("input", updateFirst, false);
-    textColor.addEventListener("change", updateAll, false);
-    textColor.select();
-}
-
-function updateFirst(event) {
-    const name = document.querySelector("#name");
-    if (name) {
-        name.style.background = event.target.value;
-    }
-}
-
-function updateAll(event) {
-    document.querySelectorAll("name").forEach((name) => {
-        name.style.background = event.target;
-    });
-}
 
 //function for change front size 
 function changeSize() {
@@ -70,6 +35,5 @@ function changeSize() {
 function changeFont(obj) {
     const name = document.getElementById('name');
     name.style.fontFamily = obj.value;
-
 
 }
