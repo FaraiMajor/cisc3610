@@ -4,7 +4,7 @@
 
 This is a repo for course CISC 3610 by Prof Lawrence Goetz
 
-#Projects and Lab List
+# Projects and Lab List
 
 Projects           | Labs
 -----------------  | ----------------
