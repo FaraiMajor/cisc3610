@@ -1,3 +1,36 @@
+@keyframes color {
+    0% {
+        background: #33CCCC;
+    }
+    20% {
+        background: #33CC36;
+    }
+    40% {
+        background: #B8CC33;
+    }
+    60% {
+        background: #FCCA00;
+    }
+    80% {
+        background: #33CC36;
+    }
+    100% {
+        background: #33CCCC;
+    }
+}
+
+body {
+    background: #33CCCC;
+    /* Fallback */
+    animation: color 9s infinite linear;
+    text-align: center;
+    padding: 2em;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
 input[type=range] {
     -webkit-appearance: none;
     margin: 10px 0;
@@ -103,8 +136,14 @@ fieldset {
     animation: glowing 1300ms infinite;
 }
 
+#resetbtn {
+    margin-left: 1180px;
+    font-size: 20px;
+    padding: 15px 40px;
+}
+
 legend {
     color: red;
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 600;
 }
