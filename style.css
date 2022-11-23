@@ -122,7 +122,7 @@
 .main {
     width: 100%;
     position: absolute;
-    top: 5vh;
+    top: 1vh;
 }
 
 header {
@@ -134,8 +134,7 @@ header h1 {
     /* width: 100%; */
     grid-area: text;
     font-family: 'Sarpanch', sans-serif;
-    font-size: 10vmin;
-    margin: 0;
+    font-size: 8vmin;
     color: rgb(11, 13, 11);
     text-shadow: 0.5vmin 0.5vmin 0 #E79C10, -0.5vmin -0.5vmin 0 #D53A33;
 }
