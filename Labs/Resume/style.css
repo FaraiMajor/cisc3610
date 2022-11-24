@@ -109,14 +109,19 @@ body {
     padding-top: 1.5rem;
 }
 
-.skills ul li p {
-    padding: .4rem 0;
+.skills ul li {
+    padding: .7rem 0;
     color: #d6dbdfaf;
     font-size: 18px;
     letter-spacing: 1px;
     display: flex;
     align-items: center;
     text-transform: uppercase;
+}
+
+.skills img {
+    margin-right: 10px;
+    width: 30px;
 }
 
 .referance-name {
