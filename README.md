@@ -10,6 +10,6 @@ Projects           | Labs
 -----------------  | ----------------
 Cartoon            | Fruit Chart
 Animation          | Sound Machine
-Text Form          | N/A
-Speech Recognition | N/A
+Text Form          | Resume Web
+Speech Recognition | Resume
 Data Visualization | N/A

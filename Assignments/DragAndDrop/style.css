@@ -1,0 +1,39 @@
+button a {
+    text-decoration: none;
+    font-size: large;
+    color: white;
+}
+
+.btn {
+    display: inline;
+    justify-content: space-between;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    border: none;
+    color: #eeeeee;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-color: rgb(198, 156, 56);
+        box-shadow: 0 0 5px rgb(198, 156, 56);
+    }
+    50% {
+        background-color: rgb(198, 156, 56);
+        box-shadow: 0 0 20px rgb(198, 156, 56);
+    }
+    100% {
+        background-color: rgb(198, 156, 56);
+        box-shadow: 0 0 5px rgb(198, 156, 56);
+    }
+}
+
+.btn {
+    animation: glowing 1300ms infinite;
+}
