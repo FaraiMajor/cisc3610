@@ -1,6 +1,6 @@
 # Farai-cisc3610
 
-## [Live Site](https://faraimajor.github.io/Farai-cisc3610/)
+## [Live Site](https://faraimajor.github.io/cisc3610/)
 
 This is a repo for course CISC 3610 by Prof Lawrence Goetz
 
